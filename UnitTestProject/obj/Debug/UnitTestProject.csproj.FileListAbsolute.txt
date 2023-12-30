@@ -1,0 +1,80 @@
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\UnitTestProject.dll.config
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Castle.Core.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\MaterialDesignColors.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Moq.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Đồ án.exe
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Đồ án.pdb
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Đồ án.exe.config
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Castle.Core.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\Moq.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\ADMIN\Downloads\Phai nồ\UnitTestProject\obj\Debug\UnitTestProject.pdb
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\UnitTestProject.dll.config
+D:\codingProj\tester\UnitTestProject\bin\Debug\UnitTestProject.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\UnitTestProject.pdb
+D:\codingProj\tester\UnitTestProject\bin\Debug\Castle.Core.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\EntityFramework.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\EntityFramework.SqlServer.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\MaterialDesignColors.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Moq.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Đồ án.exe
+D:\codingProj\tester\UnitTestProject\bin\Debug\Newtonsoft.Json.dll
+D:\codingProj\tester\UnitTestProject\bin\Debug\Đồ án.pdb
+D:\codingProj\tester\UnitTestProject\bin\Debug\Đồ án.exe.config
+D:\codingProj\tester\UnitTestProject\bin\Debug\Castle.Core.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\EntityFramework.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\EntityFramework.SqlServer.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\MaterialDesignColors.pdb
+D:\codingProj\tester\UnitTestProject\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\codingProj\tester\UnitTestProject\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\codingProj\tester\UnitTestProject\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\Moq.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\codingProj\tester\UnitTestProject\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\codingProj\tester\UnitTestProject\obj\Debug\UnitTestProject.csproj.AssemblyReference.cache
+D:\codingProj\tester\UnitTestProject\obj\Debug\UnitTestProject.csproj.CoreCompileInputs.cache
+D:\codingProj\tester\UnitTestProject\obj\Debug\UnitTestProject.csproj.CopyComplete
+D:\codingProj\tester\UnitTestProject\obj\Debug\UnitTestProject.dll
+D:\codingProj\tester\UnitTestProject\obj\Debug\UnitTestProject.pdb
