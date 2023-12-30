@@ -1,0 +1,3176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.10.0 on win32)" generated="20231228 10:51:34.112" rpa="false" schemaversion="4">
+<suite id="s1" name="Module8" source="D:\codingProj\tester\DesktopApp\testcase\Module8.robot">
+<test id="s1-t1" name="[Module8-] Test &quot;Login&quot; feature" line="22">
+<kw name="Open Application" library="Main">
+<kw name="Windows Run" library="RPA.Windows">
+<arg>${AppPath}</arg>
+<tag>window</tag>
+<doc>Use Windows Run window to launch an application.</doc>
+<msg timestamp="20231228 10:51:35.700" level="INFO">Sending keys '{Win}r' to element: &lt;module 'uiautomation' from 'C:\\Users\\LENOVO\\AppData\\Roaming\\Python\\Python310\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20231228 10:51:36.256" level="INFO">Sending keys 'D://codingProj/tester/DesktopApp/Phai nồ/bin/Debug/Đồ án.exe' to element: &lt;module 'uiautomation' from 'C:\\Users\\LENOVO\\AppData\\Roaming\\Python\\Python310\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<msg timestamp="20231228 10:51:37.815" level="INFO">Sending keys '{Enter}' to element: &lt;module 'uiautomation' from 'C:\\Users\\LENOVO\\AppData\\Roaming\\Python\\Python310\\site-packages\\uiautomation\\__init__.py'&gt;</msg>
+<status status="PASS" starttime="20231228 10:51:35.700" endtime="20231228 10:51:41.369"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:51:44.384" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231228 10:51:41.369" endtime="20231228 10:51:44.385"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:35.700" endtime="20231228 10:51:44.385"/>
+</kw>
+<kw name="Login function" library="Main">
+<kw name="Send Keys" library="RPA.Windows">
+<arg>${Usernametxb}</arg>
+<arg>admin</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20231228 10:51:44.393" level="INFO">Getting element with locator: id:focusFirstTextBox</msg>
+<msg timestamp="20231228 10:51:44.790" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x000002546538A4A0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231228 10:51:44.790" level="INFO">Locator 'id:focusFirstTextBox' produced matcher: MatchObject(locators=[('AutomationId', 'focusFirstTextBox', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231228 10:51:45.311" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.EditControl object at 0x000002546538A0B0&gt;, locator='id:focusFirstTextBox', name='', automation_id='focusFirstTextBox', control_type='EditControl', class_name='TextBox', left=572, right=947, top=399, bottom=436, width=375, height=37, xcenter=759, ycenter=417)</msg>
+<msg timestamp="20231228 10:51:45.325" level="INFO">Sending keys 'admin' to element: ControlType: EditControl    ClassName: TextBox    AutomationId: focusFirstTextBox    Rect: (572,399,947,436)[375x37]    Name: ''    Handle: 0x0(0)</msg>
+<status status="PASS" starttime="20231228 10:51:44.388" endtime="20231228 10:51:45.957"/>
+</kw>
+<kw name="Send Keys" library="RPA.Windows">
+<arg>${Passtxb}</arg>
+<arg>admin</arg>
+<tag>action</tag>
+<tag>keyboard</tag>
+<doc>Send keys to desktop, current window or to Control element
+defined by given locator.</doc>
+<msg timestamp="20231228 10:51:45.960" level="INFO">Getting element with locator: id:passwordBox</msg>
+<msg timestamp="20231228 10:51:45.965" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x000002546538A470&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231228 10:51:45.965" level="INFO">Locator 'id:passwordBox' produced matcher: MatchObject(locators=[('AutomationId', 'passwordBox', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231228 10:51:46.440" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.EditControl object at 0x000002546538A5C0&gt;, locator='id:passwordBox', name='', automation_id='passwordBox', control_type='EditControl', class_name='PasswordBox', left=572, right=947, top=474, bottom=511, width=375, height=37, xcenter=759, ycenter=492)</msg>
+<msg timestamp="20231228 10:51:46.449" level="INFO">Sending keys 'admin' to element: ControlType: EditControl    ClassName: PasswordBox    AutomationId: passwordBox    Rect: (572,474,947,511)[375x37]    Name: ''    Handle: 0x0(0)</msg>
+<status status="PASS" starttime="20231228 10:51:45.957" endtime="20231228 10:51:47.043"/>
+</kw>
+<kw name="Click" library="RPA.Windows">
+<arg>${LoginBtn}</arg>
+<tag>action</tag>
+<tag>mouse</tag>
+<doc>Mouse click on element matching given locator.</doc>
+<msg timestamp="20231228 10:51:47.047" level="INFO">Getting element with locator: name:LOGIN</msg>
+<msg timestamp="20231228 10:51:47.053" level="INFO">Resulted root element: WindowsElement(item=&lt;uiautomation.uiautomation.PaneControl object at 0x00000254653880A0&gt;, locator=None, name='Desktop 1', automation_id='', control_type='PaneControl', class_name='#32769', left=0, right=1920, top=0, bottom=1080, width=1920, height=1080, xcenter=960, ycenter=540)</msg>
+<msg timestamp="20231228 10:51:47.053" level="INFO">Locator 'name:LOGIN' produced matcher: MatchObject(locators=[('Name', 'LOGIN', 0)], _classes=set(), max_level=0)</msg>
+<msg timestamp="20231228 10:51:47.832" level="INFO">Returning element: WindowsElement(item=&lt;uiautomation.uiautomation.ButtonControl object at 0x0000025465389ED0&gt;, locator='name:LOGIN', name='LOGIN', automation_id='', control_type='ButtonControl', class_name='Button', left=660, right=810, top=606, bottom=654, width=150, height=48, xcenter=735, ycenter=630)</msg>
+<status status="PASS" starttime="20231228 10:51:47.044" endtime="20231228 10:51:48.404"/>
+</kw>
+<kw name="Wait For Window" library="Main">
+<arg>MainWindow</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${False}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231228 10:51:48.410" level="INFO">${is_opened} = False</msg>
+<status status="PASS" starttime="20231228 10:51:48.408" endtime="20231228 10:51:48.410"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>20</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231228 10:51:48.412" level="INFO">${failsafe_counter} = 20</msg>
+<status status="PASS" starttime="20231228 10:51:48.411" endtime="20231228 10:51:48.412"/>
+</kw>
+<while condition="not ${is_opened} and ${failsafe_counter} &gt; 0">
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:51:50.044" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:51:48.414" endtime="20231228 10:51:50.044"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.044" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.044" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.044" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.044" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Login', 'pid': 16624, 'name': 'Đồ án.exe', 'path': 'D:\\codingProj\\tester\\DesktopApp\\Phai nồ\\bin\\Debug\\Đồ án.exe', 'handle': 394384, 'icon': None, 'automation_id': '', 'control_type':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.044" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.044" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.044" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.044" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.044"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.053" endtime="20231228 10:51:50.053"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.054" endtime="20231228 10:51:50.054"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.054"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.054"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.054"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.054" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.054" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.054" endtime="20231228 10:51:50.054"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.054" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.056" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.054" endtime="20231228 10:51:50.056"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.056" endtime="20231228 10:51:50.056"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.056" endtime="20231228 10:51:50.056"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.056" endtime="20231228 10:51:50.056"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.056" endtime="20231228 10:51:50.056"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.054" endtime="20231228 10:51:50.056"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.058" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.058" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.056" endtime="20231228 10:51:50.058"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.058" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.058" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.056" endtime="20231228 10:51:50.058"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Facebook - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, 'automation_id': '', 'contro...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.058" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.058" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.058" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.058" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.058"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.064" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.064" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.064"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.064" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.064" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.058" endtime="20231228 10:51:50.064"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.064" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.064" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.064" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.064" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.064" endtime="20231228 10:51:50.064"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.069" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:51:50.069" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.069" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.069" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:50.069" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:50.069" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.069"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:50.074" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:50.074" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.074"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:50.074" endtime="20231228 10:51:50.074"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:50.074" endtime="20231228 10:51:50.074"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:50.074" endtime="20231228 10:51:50.074"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:50.074" endtime="20231228 10:51:50.074"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:50.069" endtime="20231228 10:51:50.074"/>
+</iter>
+<status status="PASS" starttime="20231228 10:51:50.044" endtime="20231228 10:51:50.074"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:51:50.590" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:51:50.074" endtime="20231228 10:51:50.590"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:51:50.590" level="INFO">${failsafe_counter} = 19</msg>
+<status status="PASS" starttime="20231228 10:51:50.590" endtime="20231228 10:51:50.590"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:48.412" endtime="20231228 10:51:50.590"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:51:51.726" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:51:50.594" endtime="20231228 10:51:51.726"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.726" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.726" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.726" endtime="20231228 10:51:51.726"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.726" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.726" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.726" endtime="20231228 10:51:51.726"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.726" endtime="20231228 10:51:51.741"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.726" endtime="20231228 10:51:51.741"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Login', 'pid': 16624, 'name': 'Đồ án.exe', 'path': 'D:\\codingProj\\tester\\DesktopApp\\Phai nồ\\bin\\Debug\\Đồ án.exe', 'handle': 394384, 'icon': None, 'automation_id': '', 'control_type':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Hữu Thiên đã nhắn tin SE113 Team 12 - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.741" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.741" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.741" endtime="20231228 10:51:51.741"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.757" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.757" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.757" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.757" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.757" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:51:51.757" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.757" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.757" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:51.757" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:51.757" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:51.757" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:51.757" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:51.757"/>
+</iter>
+<status status="PASS" starttime="20231228 10:51:51.726" endtime="20231228 10:51:51.757"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:51:52.262" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:51:51.757" endtime="20231228 10:51:52.262"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:51:52.262" level="INFO">${failsafe_counter} = 18</msg>
+<status status="PASS" starttime="20231228 10:51:52.262" endtime="20231228 10:51:52.262"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:50.590" endtime="20231228 10:51:52.262"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:51:53.338" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:51:52.262" endtime="20231228 10:51:53.338"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.338" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.338" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.338" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.338" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Login', 'pid': 16624, 'name': 'Đồ án.exe', 'path': 'D:\\codingProj\\tester\\DesktopApp\\Phai nồ\\bin\\Debug\\Đồ án.exe', 'handle': 394384, 'icon': None, 'automation_id': '', 'control_type':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.338" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.338" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.338" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.338" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.338" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.338" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.338" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.338" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.338"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Facebook - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, 'automation_id': '', 'contro...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.353" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.353" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.353"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.368" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:51:53.368" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.368" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.368" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.353" endtime="20231228 10:51:53.368"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:53.368" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:53.368" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:53.368" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:53.368" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.368"/>
+</iter>
+<status status="PASS" starttime="20231228 10:51:53.338" endtime="20231228 10:51:53.368"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:51:53.874" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:51:53.368" endtime="20231228 10:51:53.874"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:51:53.874" level="INFO">${failsafe_counter} = 17</msg>
+<status status="PASS" starttime="20231228 10:51:53.874" endtime="20231228 10:51:53.874"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:52.262" endtime="20231228 10:51:53.874"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:51:55.129" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:51:53.874" endtime="20231228 10:51:55.129"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.129" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.129" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.129" endtime="20231228 10:51:55.129"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.129" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.129" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.129" endtime="20231228 10:51:55.129"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.134" endtime="20231228 10:51:55.134"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.134" endtime="20231228 10:51:55.134"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.129" endtime="20231228 10:51:55.134"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.129" endtime="20231228 10:51:55.134"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.129" endtime="20231228 10:51:55.134"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Login', 'pid': 16624, 'name': 'Đồ án.exe', 'path': 'D:\\codingProj\\tester\\DesktopApp\\Phai nồ\\bin\\Debug\\Đồ án.exe', 'handle': 394384, 'icon': None, 'automation_id': '', 'control_type':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.134" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.134" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.134" endtime="20231228 10:51:55.134"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.136" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.137" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.136" endtime="20231228 10:51:55.137"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.134" endtime="20231228 10:51:55.137"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.137" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.137" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.137" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.137" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.137" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.137" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.137" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.137" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.137"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.143"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.143"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.143"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.137" endtime="20231228 10:51:55.143"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Hữu Thiên đã nhắn tin SE113 Team 12 - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.143" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.143" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.143" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.143" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.143" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.143" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.143" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.143" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.143"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.149" endtime="20231228 10:51:55.149"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.149" endtime="20231228 10:51:55.149"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.149" endtime="20231228 10:51:55.149"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.149" endtime="20231228 10:51:55.149"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.143" endtime="20231228 10:51:55.151"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.151" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.151" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.151" endtime="20231228 10:51:55.151"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.152" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.153" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.152" endtime="20231228 10:51:55.153"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.151" endtime="20231228 10:51:55.153"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.153" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:51:55.153" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.153" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.153" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:55.153" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:55.153" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:55.153" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:55.153" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.153"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:55.159" endtime="20231228 10:51:55.159"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:55.159" endtime="20231228 10:51:55.159"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.159"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.159"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:55.153" endtime="20231228 10:51:55.159"/>
+</iter>
+<status status="PASS" starttime="20231228 10:51:55.129" endtime="20231228 10:51:55.159"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:51:55.674" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:51:55.159" endtime="20231228 10:51:55.674"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:51:55.676" level="INFO">${failsafe_counter} = 16</msg>
+<status status="PASS" starttime="20231228 10:51:55.675" endtime="20231228 10:51:55.676"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:53.874" endtime="20231228 10:51:55.676"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:51:57.013" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:51:55.677" endtime="20231228 10:51:57.021"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:57.021" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:57.021" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:57.021" endtime="20231228 10:51:57.023"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:57.023" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:57.023" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:57.023" endtime="20231228 10:51:57.024"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:57.025" endtime="20231228 10:51:57.025"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:57.025" endtime="20231228 10:51:57.025"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:57.024" endtime="20231228 10:51:57.025"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:57.024" endtime="20231228 10:51:57.025"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:57.021" endtime="20231228 10:51:57.025"/>
+</iter>
+<status status="PASS" starttime="20231228 10:51:57.021" endtime="20231228 10:51:57.025"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:51:57.535" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:51:57.025" endtime="20231228 10:51:57.535"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:51:57.535" level="INFO">${failsafe_counter} = 15</msg>
+<status status="PASS" starttime="20231228 10:51:57.535" endtime="20231228 10:51:57.535"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:55.676" endtime="20231228 10:51:57.535"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:51:58.965" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:51:57.535" endtime="20231228 10:51:58.965"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.965" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:58.965" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.965" endtime="20231228 10:51:58.965"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.970" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.970" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.965" endtime="20231228 10:51:58.970"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.970" endtime="20231228 10:51:58.970"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.970" endtime="20231228 10:51:58.970"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.970" endtime="20231228 10:51:58.970"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.970" endtime="20231228 10:51:58.970"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.965" endtime="20231228 10:51:58.970"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.970" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:58.970" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.970" endtime="20231228 10:51:58.970"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.973" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.973" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.970" endtime="20231228 10:51:58.973"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.970" endtime="20231228 10:51:58.973"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.973" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:58.973" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.973" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.973" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Facebook - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, 'automation_id': '', 'contro...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.973" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:58.973" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.973" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.973" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.973"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.973" endtime="20231228 10:51:58.981"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.981" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:58.981" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.981" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.981" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.981" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:58.981" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.981" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.981" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.981"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.989" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:51:58.989" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.989"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.989" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.989" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.989"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.989"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.989"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.989"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.989"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.981" endtime="20231228 10:51:58.989"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:51:58.989" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:51:58.994" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.994"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:51:58.994" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:51:58.994" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:51:58.994" endtime="20231228 10:51:58.994"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:51:58.994" endtime="20231228 10:51:58.994"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:51:58.994" endtime="20231228 10:51:58.994"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:51:58.994" endtime="20231228 10:51:58.994"/>
+</branch>
+<status status="PASS" starttime="20231228 10:51:58.994" endtime="20231228 10:51:58.994"/>
+</if>
+<status status="PASS" starttime="20231228 10:51:58.989" endtime="20231228 10:51:58.994"/>
+</iter>
+<status status="PASS" starttime="20231228 10:51:58.965" endtime="20231228 10:51:58.994"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:51:59.506" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:51:58.994" endtime="20231228 10:51:59.506"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:51:59.506" level="INFO">${failsafe_counter} = 14</msg>
+<status status="PASS" starttime="20231228 10:51:59.506" endtime="20231228 10:51:59.506"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:57.535" endtime="20231228 10:51:59.506"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:52:00.689" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:51:59.506" endtime="20231228 10:52:00.689"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.689" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:00.689" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.689" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.689" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.689" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:00.689" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.689" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.689" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.689" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:00.689" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.689" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.689" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.689"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.704"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.704"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.704"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Hữu Thiên đã nhắn tin SE113 Team 12 - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:00.704" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:00.704" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.704"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:00.720" endtime="20231228 10:52:00.720"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:00.720" endtime="20231228 10:52:00.720"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.720"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.720"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:00.704" endtime="20231228 10:52:00.720"/>
+</iter>
+<status status="PASS" starttime="20231228 10:52:00.689" endtime="20231228 10:52:00.720"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:52:01.230" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:52:00.720" endtime="20231228 10:52:01.230"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:52:01.232" level="INFO">${failsafe_counter} = 13</msg>
+<status status="PASS" starttime="20231228 10:52:01.232" endtime="20231228 10:52:01.232"/>
+</kw>
+<status status="PASS" starttime="20231228 10:51:59.506" endtime="20231228 10:52:01.232"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:52:02.614" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:52:01.235" endtime="20231228 10:52:02.622"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.624" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:02.624" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.622" endtime="20231228 10:52:02.624"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.624" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.624" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.624" endtime="20231228 10:52:02.625"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.622" endtime="20231228 10:52:02.625"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.625" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:02.625" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.625" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.625" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.625" endtime="20231228 10:52:02.625"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.630" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:02.630" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.630" endtime="20231228 10:52:02.630"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.633" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.633" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.630" endtime="20231228 10:52:02.633"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.634" endtime="20231228 10:52:02.634"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.634" endtime="20231228 10:52:02.634"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.634" endtime="20231228 10:52:02.634"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.633" endtime="20231228 10:52:02.635"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.630" endtime="20231228 10:52:02.635"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Facebook - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, 'automation_id': '', 'contro...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.635" endtime="20231228 10:52:02.636"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.636" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.636" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.636"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.646" endtime="20231228 10:52:02.646"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.647" endtime="20231228 10:52:02.647"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.646" endtime="20231228 10:52:02.647"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.647"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.636" endtime="20231228 10:52:02.647"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:02.648" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:02.648" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:02.648" endtime="20231228 10:52:02.648"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:02.648" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:02.650" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:02.648" endtime="20231228 10:52:02.650"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:02.651" endtime="20231228 10:52:02.651"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:02.651" endtime="20231228 10:52:02.651"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:02.650" endtime="20231228 10:52:02.651"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:02.650" endtime="20231228 10:52:02.651"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:02.647" endtime="20231228 10:52:02.651"/>
+</iter>
+<status status="PASS" starttime="20231228 10:52:02.622" endtime="20231228 10:52:02.651"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:52:03.161" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:52:02.651" endtime="20231228 10:52:03.161"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:52:03.165" level="INFO">${failsafe_counter} = 12</msg>
+<status status="PASS" starttime="20231228 10:52:03.161" endtime="20231228 10:52:03.165"/>
+</kw>
+<status status="PASS" starttime="20231228 10:52:01.232" endtime="20231228 10:52:03.165"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:52:04.781" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:52:03.169" endtime="20231228 10:52:04.781"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.781" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:04.781" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.781" endtime="20231228 10:52:04.789"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.789" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.789" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.789"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.789"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.789"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.789"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.789"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.781" endtime="20231228 10:52:04.789"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.789" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:04.789" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.789"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.789" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.789" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.789"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.797"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.797"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.789" endtime="20231228 10:52:04.797"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.797" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:04.797" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.797" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.797" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.797"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Hữu Thiên đã nhắn tin SE113 Team 12 - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.804" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:04.805" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.805"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.805" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.807" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.805" endtime="20231228 10:52:04.807"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.808" endtime="20231228 10:52:04.808"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.808" endtime="20231228 10:52:04.808"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.807" endtime="20231228 10:52:04.808"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.807" endtime="20231228 10:52:04.809"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.797" endtime="20231228 10:52:04.809"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.810" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:04.811" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.809" endtime="20231228 10:52:04.811"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.811" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.811" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.811"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.811"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.811"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.811"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.811"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.809" endtime="20231228 10:52:04.811"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.811" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:04.811" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.811"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.811" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.811" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.811"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.816"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.816"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.816"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.811" endtime="20231228 10:52:04.816"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.816" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:52:04.816" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.816" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.816" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.816"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:04.816" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:04.820" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.820"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:04.821" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:04.821" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:04.821" endtime="20231228 10:52:04.821"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:04.821" endtime="20231228 10:52:04.821"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:04.821" endtime="20231228 10:52:04.821"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:04.821" endtime="20231228 10:52:04.821"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:04.821" endtime="20231228 10:52:04.821"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:04.816" endtime="20231228 10:52:04.821"/>
+</iter>
+<status status="PASS" starttime="20231228 10:52:04.781" endtime="20231228 10:52:04.821"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231228 10:52:05.324" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20231228 10:52:04.821" endtime="20231228 10:52:05.324"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20231228 10:52:05.326" level="INFO">${failsafe_counter} = 11</msg>
+<status status="PASS" starttime="20231228 10:52:05.326" endtime="20231228 10:52:05.326"/>
+</kw>
+<status status="PASS" starttime="20231228 10:52:03.167" endtime="20231228 10:52:05.327"/>
+</iter>
+<iter>
+<kw name="List Windows" library="RPA.Windows">
+<var>${windows}</var>
+<tag>window</tag>
+<doc>List all window element on the system.</doc>
+<msg timestamp="20231228 10:52:07.286" level="INFO">${windows} = [{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shel...</msg>
+<status status="PASS" starttime="20231228 10:52:05.327" endtime="20231228 10:52:07.286"/>
+</kw>
+<for flavor="IN">
+<var>${window}</var>
+<value>@{windows}</value>
+<iter>
+<var name="${window}">{'title': 'Taskbar', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 131290, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'Shell...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.286" endtime="20231228 10:52:07.301"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Module8.robot - DesktopApp - Visual Studio Code', 'pid': 4968, 'name': 'Code.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe', 'handle': 67138, 'icon...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Thẻ mới - Google Chrome', 'pid': 14144, 'name': 'chrome.exe', 'path': 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe', 'handle': 132902, 'icon': None, 'automation_id': '', 'con...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Hữu Thiên đã nhắn tin SE113 Team 12 - Opera', 'pid': 15796, 'name': 'opera.exe', 'path': 'C:\\Users\\LENOVO\\AppData\\Local\\Programs\\Opera GX\\opera.exe', 'handle': 67250, 'icon': None, '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'C:\\Windows\\System32\\cmd.exe', 'pid': 6028, 'name': 'WindowsTerminal.exe', 'path': 'C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.18.3181.0_x64__8wekyb3d8bbwe\\WindowsTermin...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.301" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.301" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.301"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'DesktopApp', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 197162, 'icon': None, 'automation_id': '', 'control_type': 'WindowControl', 'class_name': '...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.317" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:07.317" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.317" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.317" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.301" endtime="20231228 10:52:07.317"/>
+</iter>
+<iter>
+<var name="${window}">{'title': '', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 67482, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name': 'WorkerW', 're...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.317" level="INFO">0 out of 0 lines matched</msg>
+<msg timestamp="20231228 10:52:07.317" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.317" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.317" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</iter>
+<iter>
+<var name="${window}">{'title': 'Program Manager', 'pid': 15036, 'name': 'explorer.exe', 'path': 'C:\\Windows\\explorer.exe', 'handle': 65890, 'icon': None, 'automation_id': '', 'control_type': 'PaneControl', 'class_name':...</var>
+<kw name="Get Lines Containing String" library="String">
+<var>${lines}</var>
+<arg>${window}[title]</arg>
+<arg>${title}</arg>
+<doc>Returns lines of the given ``string`` that contain the ``pattern``.</doc>
+<msg timestamp="20231228 10:52:07.317" level="INFO">0 out of 1 lines matched</msg>
+<msg timestamp="20231228 10:52:07.317" level="INFO">${lines} = </msg>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${found_matches}</var>
+<arg>${lines}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20231228 10:52:07.317" level="INFO">Length is 0</msg>
+<msg timestamp="20231228 10:52:07.317" level="INFO">${found_matches} = 0</msg>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<if>
+<branch type="IF" condition="${found_matches} &gt; 0">
+<kw name="Set Variable" library="BuiltIn">
+<var>${is_opened}</var>
+<arg>${True}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</break>
+<status status="NOT RUN" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</branch>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</if>
+<status status="PASS" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.317"/>
+</iter>
+<status status="PASS" starttime="20231228 10:52:07.286" endtime="20231228 10:52:07.317"/>
+</for>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" starttime="20231228 10:52:07.317" endtime="20231228 10:52:07.640"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${failsafe_counter}</var>
+<arg>${failsafe_counter}-1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.640" endtime="20231228 10:52:07.640"/>
+</kw>
+<status status="FAIL" starttime="20231228 10:52:05.327" endtime="20231228 10:52:07.644"/>
+</iter>
+<status status="FAIL" starttime="20231228 10:51:48.412" endtime="20231228 10:52:07.644"/>
+</while>
+<if>
+<branch type="IF" condition="${failsafe_counter} == 0">
+<kw name="Fail" library="BuiltIn">
+<arg>msg= The ${failsafe_counter} == Window was not found.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.644" endtime="20231228 10:52:07.644"/>
+</kw>
+<status status="NOT RUN" starttime="20231228 10:52:07.644" endtime="20231228 10:52:07.644"/>
+</branch>
+<status status="NOT RUN" starttime="20231228 10:52:07.644" endtime="20231228 10:52:07.646"/>
+</if>
+<status status="FAIL" starttime="20231228 10:51:48.406" endtime="20231228 10:52:07.646"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${delay}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231228 10:52:07.647" endtime="20231228 10:52:07.647"/>
+</kw>
+<status status="FAIL" starttime="20231228 10:51:44.387" endtime="20231228 10:52:07.647"/>
+</kw>
+<kw name="Close Application" library="Main">
+<status status="NOT RUN" starttime="20231228 10:52:07.647" endtime="20231228 10:52:07.647"/>
+</kw>
+<status status="FAIL" starttime="20231228 10:51:35.700" endtime="20231228 10:52:07.647">Execution terminated by signal</status>
+</test>
+<test id="s1-t2" name="[Module8-2] Test &quot;Forgot password&quot; feature" line="27">
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20231228 10:52:07.657" endtime="20231228 10:52:07.661">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20231228 10:51:34.119" endtime="20231228 10:52:07.670"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Module8">Module8</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
