@@ -3,7 +3,7 @@
 ### Automation Test using: RobotFramework (Python)
 ### Unit Test using: NUnit(C#) base on our project language
 
-#Step to run:
+# Step to run:
 ## 1.Exacute all Database using SSMS
 ## 2.Connect Database with code
 ## 3.Adding ADO.NET in Database folder(via VS)
